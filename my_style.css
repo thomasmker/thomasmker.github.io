@@ -1,5 +1,4 @@
 .profile {
-
 }
 
 .backgroundVideo {
@@ -8,22 +7,38 @@
     object-fit: cover;
 }
 
-.section_separation {
-    padding-top: 50px;
+.section_content {
+    margin-top: 3em;
+    padding: 2em;
+    text-align: center;
+}
+
+.article_content {
+    padding-top: 2em;
+}
+
+.article_image {
+    border-radius: 25%;
+    border: 5px solid #555;
 }
 
 .work {
-    text-align: center;
     background-color: green;
 }
 
 .education {
-    text-align: center;
     background-color: gray;
 }
 
 p {
   text-align: justify;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  padding: 3em;
+  background-color: black;
 }
 
 
