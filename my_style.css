@@ -20,25 +20,23 @@ p {
     border: 5px solid black;
 }
 
-/*Profile section*/
+.center {
+    text-align: center;
+}
+
+/* Profile section */
 .backgroundVideo {
     height: 100vh;
     width: 100%;
     object-fit: cover;
 }
 
-
-
-.center {
-    text-align: center;
-}
-
-
-
+/* Projects section */
 .project-description {
     padding: 1em;
 }
 
+/* Testimonial section */
 .testimonial-img {
     border-radius: 50%;
     border: 5px solid black;
@@ -46,11 +44,23 @@ p {
     max-height: 210px;
 }
 
-.testimonial-space {
+.add-top-space {
     margin-top:3em;
 }
 
+/* Certificates section */
+.certificate-img {
+    max-width: 200px;
+    max-height: 200px;
+}
 
+.certificate-img-angular {
+    padding-top: 30%
+}
+
+.certificate-img-aws {
+    padding-top: 20%
+}
 
 footer {
   bottom: 0;
