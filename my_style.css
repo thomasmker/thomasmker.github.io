@@ -10,6 +10,9 @@
 .section_content {
     margin-top: 3em;
     padding: 2em;
+}
+
+.center {
     text-align: center;
 }
 
@@ -19,15 +22,15 @@
 
 .article_image {
     border-radius: 25%;
-    border: 5px solid #555;
+    border: 5px solid black;
 }
 
 .work {
-    background-color: green;
+    /*background-color: green;*/
 }
 
 .education {
-    background-color: gray;
+    /*background-color: gray;*/
 }
 
 p {
