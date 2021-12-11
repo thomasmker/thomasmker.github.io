@@ -37,6 +37,10 @@ p {
   text-align: justify;
 }
 
+.project-description {
+    padding: 1em;
+}
+
 footer {
   bottom: 0;
   width: 100%;
