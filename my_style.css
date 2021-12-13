@@ -39,27 +39,22 @@ p {
 /* Testimonial section */
 .testimonial-img {
     border-radius: 50%;
-    border: 5px solid black;
+    border: 3px solid black;
     max-width: 210px;
     max-height: 210px;
-}
-
-.add-top-space {
-    margin-top:3em;
 }
 
 /* Certificates section */
 .certificate-img {
     max-width: 200px;
     max-height: 200px;
+    margin-top: 3em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 .certificate-img-angular {
     padding-top: 30%
-}
-
-.certificate-img-aws {
-    padding-top: 20%
 }
 
 footer {
