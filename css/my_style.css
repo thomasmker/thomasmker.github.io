@@ -60,8 +60,21 @@ p {
 footer {
   bottom: 0;
   width: 100%;
-  padding: 3em;
+  padding: 2em;
   background-color: black;
+}
+
+.social-icon {
+    padding-right: 1em;
+    color: gray;
+}
+
+#footer i:hover {
+    color: white;
+}
+
+.social-icon-link {
+ text-decoration:none
 }
 
 
