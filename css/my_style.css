@@ -27,18 +27,31 @@
     object-fit: cover;
 }
 
-/* Projects section */
-.project-description {
-    padding: 1em;
-    text-align: justify;
-}
-
-/* Testimonial section */
-.testimonial-img {
+.profile-img {
     border-radius: 50%;
     border: 3px solid black;
     max-width: 210px;
     max-height: 210px;
+}
+
+.profile-content {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 40%;
+  margin-top: 20vh;
+  margin-left: 30%;
+}
+
+.profile-font {
+    font-family: Ubuntu Mono;
+}
+
+/* Projects section */
+.project-description {
+    padding: 1em;
+    text-align: justify;
 }
 
 /* Certificates section */
