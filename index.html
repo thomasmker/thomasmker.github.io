@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/all.css">
 
     <!--  Font css-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono"/>
 
     <!--  Bootstrap scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -25,16 +25,40 @@
 <body>
 
 <header>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pt-0 pb-0">
+        <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificate">Certificates</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
-<section class="profile">
+<br>
+<section id="profile" class="profile">
     <video autoplay muted loop class="backgroundVideo">
         <source src="resources/video_x264.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 
     <div class="profile-content center pt-5 pb-5">
-        <div class="row" >
+        <div class="row">
             <div class="col-12">
                 <img src="resources/me.jpg" class="profile-img" alt="mixed breed dog">
             </div>
@@ -47,7 +71,7 @@
 </section>
 
 <div class="container">
-    <section class="work section-content">
+    <section id="work" class="work section-content">
         <h1 class="section_title">Work</h1>
         <article class="article-content">
             <div class="row">
@@ -105,7 +129,7 @@
         </article>
     </section>
 
-    <section class="education section-content">
+    <section id="education" class="education section-content">
         <h1 class="section_title">Education</h1>
         <article class="article-content">
             <div class="row">
@@ -146,7 +170,7 @@
         </article>
     </section>
 
-    <section class="testimonial section-content">
+    <section id="testimonial" class="testimonial section-content">
         <h1 class="section_title">Testimonials</h1>
         <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
             <div class="carousel-inner d-flex">
@@ -230,7 +254,7 @@
         </div>
     </section>
 
-    <section class="projects section-content">
+    <section id="project" class="projects section-content">
         <h1 class="section_title">Projects</h1>
         <article class="article-content">
             <div class="row">
@@ -290,7 +314,7 @@
         </article>
     </section>
 
-    <section class="certificates section-content mb-5">
+    <section id="certificate" class="certificates section-content mb-5">
         <h1 class="section_title">Certificates</h1>
         <div class="row mt-5">
             <div class="col-12 col-sm-6 col-md-3">

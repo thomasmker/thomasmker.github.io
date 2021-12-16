@@ -20,6 +20,11 @@
     text-align: center;
 }
 
+.logo-img {
+    max-width: 3em;
+    max-height: 3em;
+}
+
 /* Profile section */
 .backgroundVideo {
     height: 100vh;
