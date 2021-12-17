@@ -1,3 +1,13 @@
+body {
+  background-color: #fff;
+  color: #24292f;
+}
+
+.dark-mode {
+  background-color: #010409;
+  color: #c9d1d9;
+}
+
 .section-content {
     margin-top: 3em;
     padding: 2em;
