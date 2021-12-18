@@ -9,6 +9,10 @@ body {
   border: 1px solid rgb(33, 27, 41);
 }
 
+.carousel-dark-mode-button {
+    filter: invert(0) !important;
+}
+
 .section-content {
     margin-top: 3em;
     padding: 2em;
