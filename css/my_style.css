@@ -40,6 +40,17 @@ body {
     max-height: 3em;
 }
 
+.dark-mode-check-input:checked {
+    background-color: #009f21;
+    border-color: #010409;
+}
+
+.dark-mode-check-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(33, 37, 41);
+    border-color: #010409;
+}
+
 /* Profile section */
 .backgroundVideo {
     height: 100vh;
