@@ -3,16 +3,6 @@ body {
   color: #24292f;
 }
 
-.dark-mode {
-  background-color: #010409;
-  color: #c9d1d9;
-  border: 1px solid rgb(33, 27, 41);
-}
-
-.carousel-dark-mode-button {
-    filter: invert(0) !important;
-}
-
 .section-content {
     margin-top: 3em;
     padding: 2em;
@@ -40,17 +30,6 @@ body {
     max-height: 3em;
 }
 
-.dark-mode-check-input:checked {
-    background-color: #009f21;
-    border-color: #010409;
-}
-
-.dark-mode-check-input:focus {
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgb(33, 37, 41);
-    border-color: #010409;
-}
-
 /* Profile section */
 .backgroundVideo {
     height: 100vh;
@@ -68,7 +47,7 @@ body {
 .profile-content {
   position: absolute;
   top: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   color: #f1f1f1;
   width: 40%;
   margin-top: 20vh;
@@ -120,7 +99,60 @@ footer {
  text-decoration:none
 }
 
+/* Dark mode */
+.dark-mode {
+  background-color: #010409;
+  color: #c9d1d9;
+  border: 1px solid rgb(33, 27, 41);
+}
 
+.dark-mode-check-input:checked {
+    background-color: #009f21;
+    border-color: #010409;
+}
 
+.dark-mode-check-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(33, 37, 41);
+    border-color: #010409;
+}
+
+.dark-mode-carousel-button {
+    filter: invert(0) !important;
+}
+
+/* Animation */
+.animated {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+ @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.content-fadeIn {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.content-fadeIn.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
 
 

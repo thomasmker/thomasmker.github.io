@@ -20,6 +20,8 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="javascript/my_script.js"></script>
 
     <title>Thomas Hayashi</title>
@@ -66,7 +68,7 @@
         Your browser does not support HTML5 video.
     </video>
 
-    <div class="profile-content center pt-5 pb-5">
+    <div class="profile-content center animated fadeIn pt-5 pb-5">
         <div class="row">
             <div class="col-12">
                 <img src="resources/me.jpg" class="profile-img" alt="mixed breed dog">
@@ -82,7 +84,7 @@
 <div class="container">
     <section id="work" class="work section-content">
         <h1 class="section_title">Work</h1>
-        <article class="article-content">
+        <article class="article-content content-fadeIn">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-4 center mb-3">
                     <a href="https://www.linkedin.com/company/matrixsistemas/mycompany/" target="_blank"
@@ -113,7 +115,7 @@
                 </div>
             </div>
         </article>
-        <article class="article-content">
+        <article class="article-content content-fadeIn">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-4 center mb-3">
                     <a href="https://www.linkedin.com/company/cengn---centre-of-excellence-in-next-generation-networks-/"
@@ -142,7 +144,7 @@
 
     <section id="education" class="education section-content">
         <h1 class="section_title">Education</h1>
-        <article class="article-content">
+        <article class="article-content content-fadeIn">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-4 center mb-3">
                     <a href="https://www.linkedin.com/school/algonquincollege/" target="_blank"
@@ -162,7 +164,7 @@
                 </div>
             </div>
         </article>
-        <article class="article-content">
+        <article class="article-content content-fadeIn">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-4 center mb-3">
                     <a href="https://www.linkedin.com/school/universidade-estadual-de-campinas/" target="_blank"
@@ -183,7 +185,7 @@
         </article>
     </section>
 
-    <section id="testimonial" class="testimonial section-content">
+    <section id="testimonial" class="testimonial section-content content-fadeIn">
         <h1 class="section_title">Testimonials</h1>
         <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
             <div class="carousel-inner d-flex">
@@ -269,7 +271,7 @@
         </div>
     </section>
 
-    <section id="project" class="projects section-content">
+    <section id="project" class="projects section-content content-fadeIn">
         <h1 class="section_title">Projects</h1>
         <article class="article-content">
             <div class="row">
@@ -310,7 +312,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-4">
                     <div class="card center h-100">
-                        <img src="resources/manager-icon.PNG" class="card-img-top" alt="file icon" data-toggle="tooltip" data-placement="top" title="File manager">
+                        <img src="resources/manager-icon.png" class="card-img-top" alt="file icon" data-toggle="tooltip" data-placement="top" title="File manager">
                         <div class="card-body">
                             <h5 class="card-title">File manager</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Python</h6>
@@ -331,8 +333,8 @@
 
     <section id="certificate" class="certificates section-content mb-5">
         <h1 class="section_title">Certificates</h1>
-        <div class="row mt-5">
-            <div class="col-12 col-sm-6 col-md-3">
+        <div class="row mt-5 center">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/9e04c33f-bc59-4c6a-b123-efbe663edbbd"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -340,7 +342,7 @@
                     <img src="resources/c-sharp.png" class="certificate-img" alt="c sharp logo">
                 </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/0057116d-cf9d-4d4c-812f-a02b9ea6c2f6"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -348,7 +350,7 @@
                     <img src="resources/python-icon.png" class="certificate-img" alt="python logo">
                 </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/a6d15898-506e-41b5-975d-7d35c3f06ab1"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -356,7 +358,7 @@
                     <img src="resources/java.png" class="certificate-img" alt="java logo">
                 </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/bcd323a7-ba3f-4ce2-bff5-4ea02eb4bf62"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -364,9 +366,7 @@
                     <img src="resources/angular.png" class="certificate-img certificate-img-angular" alt="angular logo">
                 </a>
             </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/bcc19774-f67f-4c09-870c-6f3f730ef7e9"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -374,7 +374,7 @@
                     <img src="resources/linux-icon.png" class="certificate-img" alt="linux logo">
                 </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/ab571c62-e03d-44f9-b576-a27afa3deffe"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -382,7 +382,7 @@
                     <img src="resources/aws.png" class="certificate-img pt-5" alt="aws logo">
                 </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/3b8a25f3-e742-4c9d-aa94-4672dc9ff180"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -390,7 +390,7 @@
                     <img src="resources/sqlserver-icon.png" class="certificate-img" alt="sql server logo">
                 </a>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
                 <a href="https://cursos.alura.com.br/degree/certificate/22635c82-b94b-4639-97c8-02ad73524a9f"
                    target="_blank"
                    rel="noopener noreferrer"
@@ -444,4 +444,5 @@
 </footer>
 </body>
 </html>
-<!-- TODO Add effects -->
+<!-- TODO Change angular logo -->
+<!-- TODO Fix responsiveness -->
