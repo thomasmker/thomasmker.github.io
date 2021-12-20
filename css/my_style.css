@@ -68,13 +68,7 @@ body {
 .certificate-img {
     max-width: 200px;
     max-height: 200px;
-    margin-top: 3em;
-    margin-right: 2em;
-    margin-left: 2em;
-}
-
-.certificate-img-angular {
-    padding-top: 30%
+    margin: 3em;
 }
 
 /* Footer */
