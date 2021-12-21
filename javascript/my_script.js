@@ -28,4 +28,10 @@ $(document).on("scroll", function() {
       $(tag).addClass("visible");
     }
   }
+
+  if(pageTop == 0) {
+    $("#nav-bar").addClass("nav-transparent");
+  } else {
+    $("#nav-bar").removeClass("nav-transparent");
+  }
 });

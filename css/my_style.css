@@ -3,6 +3,10 @@ body {
   color: #24292f;
 }
 
+.nav-transparent {
+    background: transparent !important;
+}
+
 .section-content {
     margin-top: 3em;
     padding: 2em;
