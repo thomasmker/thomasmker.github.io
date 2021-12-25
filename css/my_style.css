@@ -49,6 +49,10 @@ body {
     max-width: 3em;
     max-height: 3em;
 }
+.round-img {
+    border-radius: 50%;
+    border: 3px solid black;
+}
 
 /* Profile section */
 .backgroundVideo {
@@ -57,13 +61,8 @@ body {
     object-fit: cover;
 }
 
-.profile-img {
-    border-radius: 50%;
-    border: 3px solid black;
-    max-width: 210px;
-    max-height: 210px;
-    margin-right: auto;
-    margin-left: auto;
+.my-img {
+    max-width: 40%;
 }
 
 .profile-content {
@@ -78,6 +77,14 @@ body {
 
 .profile-font {
     font-family: Ubuntu Mono;
+}
+
+/* Testimonial section */
+.testimonial-img {
+    max-width: 13em;
+    max-height: 13em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* Projects section */
@@ -171,4 +178,9 @@ footer {
   transform: translate(0, 0);
 }
 
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+}
 
