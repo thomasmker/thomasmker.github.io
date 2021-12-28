@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Most images taken from https://pixabay.com/ -->
+
+    <!--  Font awesome css-->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!--  Font css-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono"/>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/my-style.css">
+
+    <!--  My custom scripts -->
+    <script src="javascript/my-script.js"></script>
+
+    <title>Thomas Hayashi</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Trabalho</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Educação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonial">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificate">Certificados</a>
+                </li>
+                <li class="nav-item">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text dark-mode" id="basic-addon1">Modo escuro</span>
+                        </div>
+                        <div class="form-check form-switch dark-mode-toggle">
+                            <input class="form-check-input dark-mode-check-input" type="checkbox"
+                                   id="flexSwitchCheckDefault" onclick="changeTheme()"/>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="profile" class="profile">
+    <video autoplay muted loop class="backgroundVideo">
+        <source src="resources/video_x264.mp4" type="video/mp4">
+        Seu navegador não suporta video HTML5.
+    </video>
+
+    <div class="profile-content hidden-mobile center fadeIn pt-2 pb-1">
+        <div class="row">
+            <div class="col-12">
+                <img src="resources/me.jpg" class="my-img round-img" alt="my profile">
+            </div>
+            <div class="col-12 mt-3">
+                <h5 class="profile-font">Olá, Eu sou</h5>
+                <h1 class="profile-font">THOMAS HAYASHI</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <section id="work" class="work section-content">
+        <h1 class="section_title">Work</h1>
+        <article class="article-content content-fadeIn">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 center mb-3">
+                    <a href="https://www.linkedin.com/company/matrixsistemas/mycompany/" target="_blank"
+                       rel="noopener noreferrer"
+                       data-toggle="tooltip" data-placement="top" title="Matrix Saúde">
+                        <img src="resources/Matrix.jpg" alt="Matrix saude" class="article-image">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8">
+                    <h2>Matrix Saúde</h2>
+                    <h5>Senior Software Developer / Mar 2016 - Present</h5>
+                    <p>Tasks:</p>
+                    <ul>
+                        <li>Full stack software developer: C# and Angular/Typescript</li>
+                        <li>Design/architecture solutions</li>
+                        <li>Project planning/effort estimation</li>
+                        <li>Testing</li>
+                        <li>Creating documentation</li>
+                        <li>Technical support for other developers</li>
+                        <li>Giving presentations to stakeholders</li>
+                        <li>Conduct scrum daily meetings</li>
+                        <li>Creating CRUD applications</li>
+                        <li>Performance optimization</li>
+                        <li>Processes automation</li>
+                        <li>Third parties integration with APIs</li>
+                        <li>Reports/queries in SQL for Business Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article class="article-content content-fadeIn">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 center mb-3">
+                    <a href="https://www.linkedin.com/company/cengn---centre-of-excellence-in-next-generation-networks-/"
+                       target="_blank" rel="noopener noreferrer"
+                       data-toggle="tooltip" data-placement="top" title="CENGN">
+                        <img src="resources/CENGN.jpg" alt="CENGN - Centre of Excellence in Next Generation Networks"
+                             class="article-image">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8">
+                    <h2>Centre of Excellence in Next Generation Networks</h2>
+                    <h5>Computer Engineering Intern / May 2015 - Aug 2015</h5>
+                    <p>Tasks:</p>
+                    <ul>
+                        <li>DevOps role</li>
+                        <li>Burn-in testing (hardware integrity and stress test) of SuperMicro Xeon Servers</li>
+                        <li>Installed Mirantis Fuel</li>
+                        <li>Registered node to Fuel</li>
+                        <li>Spun up OpenStack on top of those nodes</li>
+                        <li>Researched new plugins related to OpenStack</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="education" class="education section-content">
+        <h1 class="section_title">Education</h1>
+        <article class="article-content content-fadeIn">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 center mb-3">
+                    <a href="https://www.linkedin.com/school/algonquincollege/" target="_blank"
+                       rel="noopener noreferrer"
+                       data-toggle="tooltip" data-placement="top" title="Algonquin College">
+                        <img src="resources/AC.jpg" alt="Algonquin College" class="article-image">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8">
+                    <h2>Algonquin College of Applied Arts and Technology</h2>
+                    <h5>Exchange program / Apr 2014 - Apr 2015</h5>
+                    <dl>
+                        <dt>Courses:</dt>
+                        <dd>🖥️ Computer Engineering Technology (Computer Science)</dd>
+                        <dd>🇬🇧 English for Academic purposes (EAP) for International Students</dd>
+                    </dl>
+                </div>
+            </div>
+        </article>
+        <article class="article-content content-fadeIn">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 center mb-3">
+                    <a href="https://www.linkedin.com/school/universidade-estadual-de-campinas/" target="_blank"
+                       rel="noopener noreferrer"
+                       data-toggle="tooltip" data-placement="top" title="Unicamp">
+                        <img src="resources/Unicamp.jpg" alt="Unicamp - University of Campinas" class="article-image">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-8">
+                    <h2>University of Campinas</h2>
+                    <h5>Undergraduate / Feb 2011 - Aug 2015</h5>
+                    <dl>
+                        <dt>Course:</dt>
+                        <dd>🖥️ Computer Engineering Technology</dd>
+                    </dl>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="testimonial" class="testimonial section-content content-fadeIn">
+        <h1 class="section_title">Testimonials</h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner d-flex">
+                <div class="carousel-item active" data-bs-interval="8000">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-12 col-sm-12 col-md-6 mt-3 mb-3">
+                            <h5><strong>Ana Estela Silva - Professor at University of Campinas</strong></h5>
+                            <em>
+                                <q>
+                                    I have known Thomas since he attended two of my disciplines. He had a very good
+                                    performance in both disciplines. I was also his supervisor in a research project
+                                    which lasted on year. In this project he received a very tough to get scholarship.
+                                    He is very responsible and hardworking.
+                                </q>
+                            </em>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-2">
+                            <a href="https://www.linkedin.com/in/ana-estela-silva-53680929/" target="_blank"
+                               rel="noopener noreferrer"
+                               data-toggle="tooltip" data-placement="top" title="Ana Estela Silva">
+                                <img src="resources/ana_estela.jpg" class="d-block testimonial-img round-img" alt="Ana Estela">
+                            </a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-12 col-sm-12 col-md-6 mt-3 mb-3">
+                            <h5><strong>Michael Weir - VP Technology & Operations at CENGN</strong></h5>
+                            <em>
+                                <q>
+                                    Thomas was personally assigned to 22+ stories & sub-tasks inside of the Sprint
+                                    along with the rest of the University of Ottawa cohort. That's extremely good
+                                    feature velocity given experience, he should be proud of that.
+                                </q>
+                            </em>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-2">
+                            <a href="https://www.linkedin.com/in/michael-weir-8524869/" target="_blank"
+                               rel="noopener noreferrer"
+                               data-toggle="tooltip" data-placement="top" title="Michael Weir">
+                                <img src="resources/michael_weir.jpg" class="d-block testimonial-img round-img"
+                                     alt="Micheal Weir">
+                            </a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-12 col-sm-12 col-md-6 mt-3 mb-3 center">
+                            <h5><strong>Tommy - A mixed-breed dog</strong></h5>
+                            <em>
+                                <q>
+                                    My master is the best, he throws the ball, pets my belly and always gives me a
+                                    treat. Woof Woof
+                                </q>
+                            </em>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-2">
+                            <img src="resources/dog.jpg" class="d-block testimonial-img round-img" alt="mixed breed dog"
+                                 data-toggle="tooltip" data-placement="top" title="Tommy">
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev hidden-mobile" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next hidden-mobile" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="project" class="projects section-content content-fadeIn">
+        <h1 class="section_title">Projects</h1>
+        <article class="article-content">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 mb-2">
+                    <div class="card center h-100">
+                        <img src="resources/rpg-icon.png" class="card-img-top" alt="rpg-image" data-toggle="tooltip"
+                             data-placement="top" title="Text based RPG">
+                        <div class="card-body">
+                            <h5 class="card-title">Text based RPG</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+                            <a href="https://replit.com/@thomashsh11/python-text-based-rpg#main.py" class="card-link"
+                               target="_blank" rel="noopener noreferrer">Demo</a>
+                            <a href="https://github.com/thomasmker/python-text-based-rpg" class="card-link"
+                               target="_blank"
+                               rel="noopener noreferrer">Code</a>
+                            <p class="card-text project-description">
+                                This project covers many concepts, such as: classes, objects, getters, setters,
+                                properties, attributes, static methods, class methods, inheritance, polymorphism
+                                and aggregation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 mb-2">
+                    <div class="card center h-100">
+                        <img src="resources/pomodoro-icon.png" class="card-img-top" alt="pomodoro" data-toggle="tooltip"
+                             data-placement="top" title="Pomodoro">
+                        <div class="card-body">
+                            <h5 class="card-title">Pomodoro</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+                            <a href="https://replit.com/@thomashsh11/pomodoro#main.py" class="card-link" target="_blank"
+                               rel="noopener noreferrer">Demo</a>
+                            <a href="https://github.com/thomasmker/pomodoro" class="card-link" target="_blank"
+                               rel="noopener noreferrer">Code</a>
+                            <p class="card-text project-description">
+                                This project is used to apply the pomodoro technique. The pomodoro timer tracks the
+                                25 minutes interval and each short/long break. This app was created using tkinter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 mb-2">
+                    <div class="card center h-100">
+                        <img src="resources/manager-icon.png" class="card-img-top" alt="file icon" data-toggle="tooltip"
+                             data-placement="top" title="File manager">
+                        <div class="card-body">
+                            <h5 class="card-title">File manager</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+                            <a href="https://github.com/thomasmker/file_manager" class="card-link" target="_blank"
+                               rel="noopener noreferrer">Code</a>
+                            <p class="card-text project-description">
+                                A personal use file manager to rename files removing prefix and suffix in batch. This
+                                project was also used as an opportunity to use the python unit test and pytest for the
+                                first
+                                time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="certificate" class="certificates section-content mb-5">
+        <h1 class="section_title">Certificates</h1>
+        <div class="row mt-5 center">
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/9e04c33f-bc59-4c6a-b123-efbe663edbbd"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="C#">
+                    <img src="resources/c-sharp.png" class="certificate-img" alt="c sharp logo">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/0057116d-cf9d-4d4c-812f-a02b9ea6c2f6"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="Python">
+                    <img src="resources/python-icon.png" class="certificate-img" alt="python logo">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/a6d15898-506e-41b5-975d-7d35c3f06ab1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="Java">
+                    <img src="resources/java.png" class="certificate-img" alt="java logo">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/bcd323a7-ba3f-4ce2-bff5-4ea02eb4bf62"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="Angular JS">
+                    <img src="resources/angular_logo.png" class="certificate-img" alt="angular logo">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/bcc19774-f67f-4c09-870c-6f3f730ef7e9"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="Linux">
+                    <img src="resources/linux-icon.png" class="certificate-img" alt="linux logo">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/ab571c62-e03d-44f9-b576-a27afa3deffe"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="Amazon Web Services">
+                    <img src="resources/aws.png" class="certificate-img pt-5" alt="aws logo">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/3b8a25f3-e742-4c9d-aa94-4672dc9ff180"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="Microsoft SQL Server">
+                    <img src="resources/sqlserver-icon.png" class="certificate-img" alt="sql server logo">
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 content-fadeIn">
+                <a href="https://cursos.alura.com.br/degree/certificate/22635c82-b94b-4639-97c8-02ad73524a9f"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-toggle="tooltip" data-placement="top" title="Agile">
+                    <img src="resources/agile-icon.png" class="certificate-img" alt="scrum logo">
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="container-fluid center">
+        <a class="social-icon-link" href="https://github.com/thomasmker" target="_blank" rel="noopener noreferrer">
+            <i class="social-icon fab fa-github fa-2x"></i>
+        </a>
+
+        <a class="social-icon-link" href="https://www.linkedin.com/in/thomas-hayashi-a05489b5/" target="_blank"
+           rel="noopener noreferrer">
+            <i class="social-icon fab fa-linkedin fa-2x"></i>
+        </a>
+
+        <a class="social-icon-link" href="mailto:thomas.hsh11@yahoo.com">
+            <i class="social-icon fas fa-envelope fa-2x"></i>
+        </a>
+
+        <a class="social-icon-link" href="https://twitter.com/Thomasmker" target="_blank" rel="noopener noreferrer">
+            <i class="social-icon fab fa-twitter fa-2x"></i>
+        </a>
+
+        <a class="social-icon-link" href="https://www.instagram.com/thomasmker/" target="_blank"
+           rel="noopener noreferrer">
+            <i class="social-icon fab fa-instagram fa-2x"></i>
+        </a>
+
+        <a class="social-icon-link" href="https://www.duolingo.com/profile/thomasmker" target="_blank"
+           rel="noopener noreferrer">
+            <i class="social-icon fab fa-earlybirds fa-2x"></i>
+        </a>
+
+        <a class="social-icon-link" href="https://app.memrise.com/user/Thomas%E6%9E%97/" target="_blank"
+           rel="noopener noreferrer">
+            <i class="social-icon fas fa-brain fa-2x"></i>
+        </a>
+
+        <p class="copyright text-muted mt-3">Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>
+            Thomas Hayashi
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
